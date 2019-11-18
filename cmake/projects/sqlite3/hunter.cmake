@@ -160,6 +160,7 @@ hunter_cmake_args(
   sqlite3
   CMAKE_ARGS
     PKGCONFIG_EXPORT_TARGETS=sqlite3
+    EXTRA_FLAGS=--disable-tcl
 )
 hunter_configuration_types(sqlite3 CONFIGURATION_TYPES Release)
 hunter_pick_scheme(DEFAULT url_sha1_autotools)
