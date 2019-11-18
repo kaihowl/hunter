@@ -161,6 +161,7 @@ function(hunter_autotools_configure_command out_command_line)
 
   list(LENGTH PARAM_PACKAGE_CONFIGURATION_TYPES len)
   if(NOT "${len}" EQUAL "1")
+    message(FATAL_ERROR "DEAD")
     hunter_fatal_error(
         "Autotools PACKAGE_CONFIGURATION_TYPES has ${len} elements: ${PARAM_PACKAGE_CONFIGURATION_TYPES}. Only 1 is allowed"
         ERROR_PAGE "autools.package.configuration.types"
