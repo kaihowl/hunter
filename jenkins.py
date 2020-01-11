@@ -171,6 +171,7 @@ def run():
       '--home',
       project_dir,
       '--fwd',
+      'CMAKE_CXX_EXTENSIONS=ON',
       'CMAKE_POLICY_DEFAULT_CMP0069=NEW',
       'HUNTER_SUPPRESS_LIST_OF_FILES=ON',
       'HUNTER_ROOT={}'.format(hunter_root),
